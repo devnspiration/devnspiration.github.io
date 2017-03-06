@@ -1,0 +1,20 @@
+title: Devnspiration
+email: hi@devnspiration.com
+description: The inspiration for devs.
+baseurl: ""
+url: ""
+twitter_username: Devnspiration
+github_username:  devnspiration
+
+source: src
+destination: _site
+
+# Build settings
+markdown: kramdown
+permalink: /:title.html
+
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
