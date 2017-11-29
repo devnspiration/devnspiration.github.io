@@ -4,7 +4,8 @@
   "description": "A place to daily inspiration for developers.",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp && bundle exec jekyll serve --incremental",
+    "build": "gulp && bundle exec jekyll build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/devnspiration/devnspiration.github.io/issues"
   },
-  "homepage": "https://github.com/devnspiration/devnspiration.github.io#readme"
+  "homepage": "https://github.com/devnspiration/devnspiration.github.io#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-typescript": "^3.2.2",
+    "gulp-uglify": "^3.0.0",
+    "normalize.css": "^7.0.0",
+    "typescript": "^2.5.2"
+  }
 }
