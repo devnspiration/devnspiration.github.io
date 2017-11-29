@@ -17,7 +17,8 @@
     "url": "https://github.com/devnspiration/devnspiration.github.io/issues"
   },
   "homepage": "https://github.com/devnspiration/devnspiration.github.io#readme",
-  "dependencies": {
+  "devDependencies": {
+    "gulp-clean-css": "^3.9.0",
     "gulp": "^3.9.1",
     "gulp-cli": "^1.4.0",
     "gulp-concat": "^2.6.1",
