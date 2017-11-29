@@ -1,0 +1,26 @@
+# Site
+title:
+description:
+baseurl: ""
+url: ""
+
+# Build
+markdown: kramdown
+plugins:
+  - jekyll-feed
+sass:
+  sass_dir: assets/_sass
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - gulpfile.js
+  - package.json
+  - README.md
+  - LICENSE

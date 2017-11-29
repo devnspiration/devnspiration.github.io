@@ -1,0 +1,19 @@
+{
+  "name": "devnspiration",
+  "version": "1.0.0",
+  "description": "A place to daily inspiration for developers.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devnspiration/devnspiration.github.io.git"
+  },
+  "author": "@kvnol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devnspiration/devnspiration.github.io/issues"
+  },
+  "homepage": "https://github.com/devnspiration/devnspiration.github.io#readme"
+}
