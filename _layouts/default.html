@@ -1,20 +1,24 @@
 ---
 layout: compress
 ---
-<!DOCTYPE html>
+<!DOCTYPE html itemscope itemtype="http://schema.org/Blog">
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{% if page.url == '/' %}{{ site.title }}{% else %}{{ page.title }} - {{ site.title }}{% endif %}</title>
+  <meta itemprop="creator" content="Kevin Oliveira">
+  <meta itemprop="name" content="{{ site.title }}">
+  <meta itemprop="description" content="{{ site.description }}">
+  <meta itemprop="image" content="{{ site.image }}">
+  <title>{{ site.title }}</title>
 
   <link rel="stylesheet" href="/assets/css/vendor.css">
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body class="{{ page.slug }}">
   {% include header.html %}
-  <main class="main">
+  <main class="main" itemprop="main">
     {{ content }}
   </main>
   {% include footer.html %}
