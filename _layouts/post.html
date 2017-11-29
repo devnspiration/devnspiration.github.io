@@ -1,0 +1,26 @@
+---
+layout: compress
+---
+<!DOCTYPE html itemscope itemtype="http://schema.org/BlogPosting">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta itemprop="author" content="{{ page.author }}">
+  <meta itemprop="name" content="{{ page.title }}">
+  <meta itemprop="description" content="{{ page.description }}">
+  <meta itemprop="image" content="{{ page.image }}">
+  <title>{{ page.title }}</title>
+
+  <link rel="stylesheet" href="/assets/css/vendor.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="{{ page.slug }}">
+  {% include header.html %}
+  <main class="main" itemprop="main">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+</body>
+</html>
