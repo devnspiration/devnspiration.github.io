@@ -1,8 +1,9 @@
 # Site
-title:
-description:
+title: "Devnspiration"
+description: "A place to daily inspiration for developers."
 baseurl: ""
-url: ""
+url: "https://devnspiration.com/"
+username: "devnspiration"
 
 # Build
 markdown: kramdown
