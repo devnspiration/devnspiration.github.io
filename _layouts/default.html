@@ -2,23 +2,23 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/Blog">
+<html lang="en" itemscope itemtype="http://schema.org/Blog{% if page.slug != 'home' %}Posting{% endif %}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{{ site.title }}</title>
-  <meta name="description" content="{{ site.description }}">
-  
-  <meta itemprop="creator" content="Kevin Oliveira">
-  <meta itemprop="name" content="{{ site.title }}">
-  <meta itemprop="description" content="{{ site.description }}">
-  <meta itemprop="image" content="{{ site.image }}">
+  <title>{% if page.slug == 'home' %}{{ site.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.slug == 'home' %}{{ site.description }}{% else %}{{ page.description }}{% endif %}">
+
+  <meta itemprop="{% if page.slug == 'home' %}creator{% else %}author{% endif %}" content="{% if page.slug == 'home' %}Kevin Oliveira{% else %}{{ page.author }}{% endif %}">
+  <meta itemprop="name" content="{% if page.slug == 'home' %}{{ site.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}">
+  <meta itemprop="description" content="{% if page.slug == 'home' %}{{ site.description }}{% else %}{{ page.description }}{% endif %}">
+  <meta itemprop="image" content="{% if page.slug == 'home' %}{{ site.image }}{% else %}{{ page.image }}{% endif %}">
   
   <link rel="stylesheet" href="/assets/css/vendor.css">
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
-<body class="{{ page.slug }}">
+<body class="{{ page.slug }}" itemscope itemtype="http://schema.org/WebPage">
   {% include header.html %}
   <main class="main" itemprop="main">
     {{ content }}
