@@ -5,6 +5,14 @@ baseurl: ""
 url: "https://devnspiration.com/"
 username: "devnspiration"
 
+menu:
+  - title: "Articles"
+    slug: "blog"
+  - title: "About"
+    slug: "about"
+  - title: "Contact"
+    slug: "contact"
+
 # Build
 markdown: kramdown
 plugins:

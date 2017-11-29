@@ -1,0 +1,8 @@
+<header class="header" role="banner">
+  <nav class="header-nav" role="navigation">
+    <a href="{{ site.url }}" class="nav-logo"></a>
+    {% for item in site.menu %}
+      <a href="/{{ item.slug }}" class="nav-item">{{ item.title }}</a>
+    {% endfor %}
+  </nav>
+</header>
