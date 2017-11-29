@@ -1,3 +1,3 @@
-![Devnspiration](https://cloud.githubusercontent.com/assets/3299130/23580583/39ede986-00e3-11e7-9a1a-e9732e0bb246.PNG)
+<p align="center"><img src="https://user-images.githubusercontent.com/3299130/33351831-ce9f6320-d48c-11e7-98a4-f8d1d1b552d3.png" alt="Devnspiration" width="200"></p>
 
-Devnspiration is a place where __developers and designers__ seek and share inspirations for the community.
+<p align="center">A place to daily inspiration for developers.</p>
