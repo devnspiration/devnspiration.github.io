@@ -1,0 +1,23 @@
+.header-menu
+  @extend %flexbox
+  +align-items(center)
+  margin-bottom: 6.25rem
+
+.menu-logo
+  margin-right: 3.125rem
+
+  > svg
+    width: 1.25rem
+
+.menu-item
+  font:
+    size: .875rem
+    weight: 600
+  text-transform: uppercase
+  color: lighten($color-dark, 65%)
+
+  &:hover
+    color: $color-dark
+
+  &:not(:last-child)
+    margin-right: 1.875rem
