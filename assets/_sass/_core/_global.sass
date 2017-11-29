@@ -8,6 +8,9 @@ html
   -webkit-font-smoothing: subpixel-antialiased
 
 body
+  @extend %flexbox
+  +flex-direction(column)
+  height: 100%
   font:
     family: $font-family
     size: $font-size

@@ -2,7 +2,7 @@
   <nav class="header-menu" role="navigation">
     <a href="{{ site.url }}" class="menu-logo">{% include logo.svg %}</a>
     {% for item in site.menu %}
-      <a href="/{{ item.slug }}" class="menu-item">{{ item.title }}</a>
+      <a href="/{{ item.slug }}" class="header-menu_item">{{ item.title }}</a>
     {% endfor %}
   </nav>
 
