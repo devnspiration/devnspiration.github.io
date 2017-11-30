@@ -1,0 +1,14 @@
+@mixin text-button--big
+  display: block
+  font:
+    size: 1.875rem
+    weight: 300
+  color: $color-light
+
+  > .button-symbol
+    display: inline-block
+    transition: .2s all ease
+
+  &:hover
+    > .button-symbol
+      transform: translateX(-.625rem)

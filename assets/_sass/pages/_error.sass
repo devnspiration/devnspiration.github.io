@@ -1,0 +1,32 @@
+.error
+  text-align: center
+  color: $color-light
+  background-color: $color-dark
+
+.error-header
+  @extend %flexbox
+  +align-items(center)
+  +justify-content(center)
+  margin:
+    top: 3.125rem
+    bottom: 9.375rem
+
+  > svg
+    width: 1.25rem
+    fill: $color-light
+
+.error-title
+  margin: 0 auto 1.875rem
+  font-size: 10rem
+  line-height: 7rem
+
+.error-description
+  margin: 0 auto .9375rem
+  font-size: 1.875rem
+
+.error-text
+  margin: 0 auto 3.125rem
+  font-size: 1.5rem
+
+.error-button
+  @include text-button--big
