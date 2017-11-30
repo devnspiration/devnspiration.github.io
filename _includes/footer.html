@@ -1,0 +1,10 @@
+<footer class="footer" role="contentinfo">
+  <div class="footer-copy">
+    <a href="{{ site.url }}" title="Devnspiration" class="footer-logo">{% include logo.svg %}</a>
+  </div>
+  <nav class="footer-menu">
+    {% for item in site.menu %}
+      <a href="/{{ item.slug }}" class="footer-menu_item">{{ item.title }}</a>
+    {% endfor %}
+  </nav>
+</footer>

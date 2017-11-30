@@ -1,0 +1,35 @@
+# Site
+title: "Devnspiration"
+description: "Devnspiration is a place for daily inspiration to developers."
+baseurl: ""
+url: "https://devnspiration.com/"
+username: "devnspiration"
+
+menu:
+  - title: "Articles"
+    slug: "blog"
+  - title: "About"
+    slug: "about"
+  - title: "Contact"
+    slug: "contact"
+
+# Build
+markdown: kramdown
+plugins:
+  - jekyll-feed
+sass:
+  sass_dir: assets/_sass
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - gulpfile.js
+  - package.json
+  - README.md
+  - LICENSE

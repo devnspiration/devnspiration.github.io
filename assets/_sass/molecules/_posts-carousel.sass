@@ -1,0 +1,44 @@
+.blog-posts_title
+  margin: 0 0 1.5625rem
+  font:
+    size: 1.1875rem
+    weight: 600
+  text-transform: uppercase
+  color: lighten($color-dark, 65%)
+
+.posts-carousel
+  @extend %flexbox
+  +align-items(stretch)
+  height: 10.9375rem
+
+.posts-carousel_item
+  @extend %flexbox
+  +align-items(center)
+  overflow: hidden
+  max-width: 28.125rem
+  margin-right: 1.5625rem
+  border-radius: .3125rem
+  box-shadow: 0 .1875rem .3125rem rgba(0,0,0,.1)
+
+.posts-carousel_image
+  width: 10.9375rem
+  margin: 0
+
+.posts-carousel_title
+  margin: 0 1.5625rem
+  font:
+    size: 1.3125rem
+    weight: 600
+  color: lighten($color-dark, 44%)
+
+.posts-more
+  @extend %flexbox
+  +align-items(center)
+  +justify-content(center)
+  width: 10.9375rem
+  font:
+    size: 3.75rem
+    weight: 900
+  color: lighten($color-dark, 44%)
+  background-color: lighten($color-dark, 93%)
+  border-radius: .3125rem

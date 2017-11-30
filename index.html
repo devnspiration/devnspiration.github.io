@@ -1,0 +1,20 @@
+---
+layout: default
+slug: home
+---
+
+<section class="blog-posts">
+  <h3 class="blog-posts_title">Latest articles</h3>
+
+  <div class="posts-carousel">
+    {% for post in site.posts %}
+    <a href="{{ post.url }}" class="posts-carousel_item">
+        <figure class="posts-carousel_image">
+          <img src="{{ post.thumb }}" alt="{{ post.title }}">
+        </figure>
+        <h4 class="posts-carousel_title">{{ post.title }}</h4>
+      </a>
+    {% endfor %}
+    <a href="/blog" class="posts-more" title="Show all posts">+</a>
+  </div>
+</section>
