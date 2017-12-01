@@ -2,7 +2,7 @@
 title: "Devnspiration"
 description: "Devnspiration is a place for daily inspiration to developers."
 baseurl: ""
-url: "https://devnspiration.com/"
+url: "https://devnspiration.com"
 username: "devnspiration"
 
 menu:

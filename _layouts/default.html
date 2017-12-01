@@ -10,10 +10,15 @@ layout: compress
   <title>{% if page.slug == 'home' %}{{ site.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.slug == 'home' %}{{ site.description }}{% else %}{{ page.description }}{% endif %}">
 
+  <!-- Schema.org -->
   <meta itemprop="{% if page.slug == 'home' %}creator{% else %}author{% endif %}" content="{% if page.slug == 'home' %}Kevin Oliveira{% else %}{{ page.author }}{% endif %}">
   <meta itemprop="name" content="{% if page.slug == 'home' %}{{ site.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}">
   <meta itemprop="description" content="{% if page.slug == 'home' %}{{ site.description }}{% else %}{{ page.description }}{% endif %}">
   <meta itemprop="image" content="{% if page.slug == 'home' %}{{ site.image }}{% else %}{{ page.image }}{% endif %}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" href="/favicon.png">
   
   <link rel="stylesheet" href="/assets/css/vendor.css">
   <link rel="stylesheet" href="/assets/css/main.css">
