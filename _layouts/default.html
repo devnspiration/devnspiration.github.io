@@ -8,17 +8,38 @@ layout: compress
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{% if page.slug == 'home' %}{{ site.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.slug == 'home' %}{{ site.description }}{% else %}{{ page.description }}{% endif %}">
+  <meta name="description" content="{{ page.description }}">
 
   <!-- Schema.org -->
   <meta itemprop="{% if page.slug == 'home' %}creator{% else %}author{% endif %}" content="{% if page.slug == 'home' %}Kevin Oliveira{% else %}{{ page.author }}{% endif %}">
   <meta itemprop="name" content="{% if page.slug == 'home' %}{{ site.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}">
-  <meta itemprop="description" content="{% if page.slug == 'home' %}{{ site.description }}{% else %}{{ page.description }}{% endif %}">
-  <meta itemprop="image" content="{% if page.slug == 'home' %}{{ site.image }}{% else %}{{ page.image }}{% endif %}">
+  <meta itemprop="description" content="{{ page.description }}">
+  <meta itemprop="image" content="{{ page.image }}">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" href="/favicon.png">
+
+  <!-- Facebook OG -->
+  <meta property="og:type" content="blog">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:image" content="{{ page.image }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:locale" content="en">
+  <!-- As próximas tags são opcionais mas recomendadas -->
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@{{ site.username }}">
+  <meta name="twitter:creator" content="@{{ page.author.twitter }}">
+  <meta name="twitter:url" content="{{ page.url | absolute_url }}">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+  <meta name="twitter:image" content="{{ page.image }}">
   
   <link rel="stylesheet" href="/assets/css/vendor.css">
   <link rel="stylesheet" href="/assets/css/main.css">
