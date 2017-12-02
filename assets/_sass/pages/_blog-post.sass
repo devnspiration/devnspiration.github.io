@@ -1,0 +1,43 @@
+.post
+
+  .main
+    @extend %flexbox
+    +flex(none)
+    +justify-content(space-between)
+    margin-bottom: 3.125rem
+
+
+.post-item
+  @include card-post
+  width: 100%
+
+  @media (min-width: 64rem)
+    max-width: 75%
+
+.post-header
+  margin-bottom: 1.875rem
+  text-align: center
+
+.post-cover
+  @include card-cover
+
+.post-author
+  @include author
+
+  &_image
+    @include author-img
+
+  &_name
+    @include author-name
+
+.post-title
+  @include card-title
+  font-size: 2.25rem
+
+.post-date
+  @include card-date
+
+.post-content p
+  margin:
+    right: 3.125rem
+    left: 3.125rem
