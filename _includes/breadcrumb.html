@@ -1,0 +1,31 @@
+<nav class="breadcrumb">
+  <h6 class="breadcrumb-title">You're in:</h6>
+  <ol class="breadcrumb-list" itemscope itemtype="http://schema.org/BreadcrumbList">
+    <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+      itemtype="http://schema.org/ListItem">
+      <a href="{{ site.url }}" class="breadcrumb-item" itemprop="item"><span itemprop="name">Home</span></a>
+      <span class="breadcrumb-item_sep">&gt;</span>
+      <meta itemprop="position" content="1">
+    </li>
+    {% if page.slug != 'blog' %}
+    <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+      itemtype="http://schema.org/ListItem">
+      <a href="{{ page.url }}" class="breadcrumb-item" itemprop="item"><span itemprop="name">{{ page.title }}</span></a>
+      <span class="breadcrumb-item_sep">&gt;</span>
+      <meta itemprop="position" content="2">
+    </li>
+    {% else %}
+    <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+    itemtype="http://schema.org/ListItem">
+      <a href="/blog" class="breadcrumb-item" itemprop="item"><span itemprop="name">Blog</span></a>
+      <span class="breadcrumb-item_sep">&gt;</span>
+      <meta itemprop="position" content="2">
+    </li>
+    <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+    itemtype="http://schema.org/ListItem">
+      <a href="{{ page.url }}" class="breadcrumb-item" itemprop="item"><span itemprop="name">{{ page.title }}</span></a>
+      <meta itemprop="position" content="3">
+    </li>
+    {% endif %}
+  </ol>
+</nav>
