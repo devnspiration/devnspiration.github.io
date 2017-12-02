@@ -1,0 +1,16 @@
+---
+layout: default
+slug: blog
+title: "Blog"
+---
+
+<section class="main-content">
+  {% include breadcrumb.html %}
+  <ol class="feed-list">
+    {% for item in collection %}
+      <li class="feed-item"></li>
+    {% endfor %}
+  </ol>
+</section>
+
+{% include sidebar.html %}
