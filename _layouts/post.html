@@ -45,7 +45,24 @@ layout: compress
 </head>
 <body class="{{ page.slug }}">
   {% include header.html %}
-  {{ content }}
+  <section class="main-content">
+    {% include breadcrumb.html %}
+    <article class="post">
+      <header class="post-header">
+        <img src="{{ page.image.cover }}" alt="Cover of {{ page.title }}" class="post-cover">
+        <div class="post-author">
+          <img src="https://www.gravatar.com/avatar/{{ page.author.email | remove: ' ' | strip_newlines | downcase | md5 }}?s=75&d=blank" alt="{{ page.author.name }} avatar" class="post-author_image">
+          <span class="post-author_name">by {{ page.author.name }}</span>
+        </div>
+        <h3 class="post-title">{{ page.title }}</h3>
+        <time class="post-date" pubdate datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %d, %Y" }}</time>
+      </header>
+      <div class="post-content">
+        {{ content }}
+      </div>
+    </article>
+  </section>
+  {% include sidebar.html %}
   {% include footer.html %}
 </body>
 </html>
