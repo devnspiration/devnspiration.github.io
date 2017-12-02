@@ -1,0 +1,21 @@
+@mixin card-post
+  overflow: hidden
+  width: 15.625rem
+  height: 21.875rem
+  display: block
+  margin-right: 1.875rem
+  text-align: center
+  background-color: $color-light
+  border-radius: .3125rem
+  box-shadow: 0 .1875rem .3125rem rgba(0,0,0,0.05)
+
+@mixin card-title
+  margin: 0 auto .625rem
+  font:
+    size: 1.1875rem
+    weight: 600
+  color: lighten($color-dark, 48%)
+
+@mixin card-date
+  font-size: .875rem
+  color: lighten($color-dark, 68%)
