@@ -1,12 +1,8 @@
 <header class="header" role="banner">
+  <a href="{{ site.url }}" class="menu-logo">{% include symbol.svg %}</a>
   <nav class="header-menu" role="navigation">
-    <a href="{{ site.url }}" class="menu-logo">{% include symbol.svg %}</a>
     {% for item in site.menu %}
       <a href="/{{ item.slug }}" class="header-menu_item">{{ item.title }}</a>
     {% endfor %}
   </nav>
-
-  {% if page.slug == 'home' %}
-    <h1 class="header-title">{{ site.description }}</h1>
-  {% endif %}
 </header>
