@@ -12,7 +12,7 @@ layout: compress
 
   <!-- Schema.org -->
   <meta itemprop="{% if page.slug == 'home' %}creator{% else %}author{% endif %}" content="{{ page.author.name }}">
-  <meta itemprop="name" content="{% if page.slug == 'home' %}{{ site.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}">
+  <meta itemprop="name" content="{{ page.title }}">
   <meta itemprop="description" content="{{ page.description }}">
   <meta itemprop="image" content="{{ page.image.cover }}">
 
@@ -47,17 +47,17 @@ layout: compress
   {% include header.html %}
   <section class="main-content">
     {% include breadcrumb.html %}
-    <article class="post">
+    <article class="post-item">
       <header class="post-header">
         <img src="{{ page.image.cover }}" alt="Cover of {{ page.title }}" class="post-cover">
         <div class="post-author">
           <img src="https://www.gravatar.com/avatar/{{ page.author.email | remove: ' ' | strip_newlines | downcase | md5 }}?s=75&d=blank" alt="{{ page.author.name }} avatar" class="post-author_image">
-          <span class="post-author_name">by {{ page.author.name }}</span>
+          <p class="post-author_name">by {{ page.author.name }}</p>
         </div>
         <h3 class="post-title">{{ page.title }}</h3>
-        <time class="post-date" pubdate datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %d, %Y" }}</time>
+        <time class="post-date" pubdate datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %d, %Y" }}</time>
       </header>
-      <div class="post-content">
+      <div class="post-content" itemprop="articleBody">
         {{ content }}
       </div>
     </article>
