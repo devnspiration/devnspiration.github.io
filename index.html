@@ -7,6 +7,10 @@ author:
   twitter: "devnspiration"
 ---
 
+{% if page.slug == 'home' %}
+  <h1 class="main-title">{{ site.description }}</h1>
+{% endif %}
+
 <section class="blog-posts">
   <h3 class="blog-posts_title">Latest articles</h3>
 
