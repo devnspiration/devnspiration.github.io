@@ -6,13 +6,14 @@
     +justify-content(space-between)
     margin-bottom: 3.125rem
 
+    .main-content
+      width: 100%
+
+      @media (min-width: 64rem)
+        max-width: 75%
 
 .post-item
   @include card-post
-  width: 100%
-
-  @media (min-width: 64rem)
-    max-width: 75%
 
 .post-header
   margin-bottom: 1.875rem
