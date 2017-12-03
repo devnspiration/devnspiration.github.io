@@ -1,12 +1,37 @@
 .footer
+  @extend %flexbox
+  +align-items(center)
+  +flex-shrink(0)
+  +justify-content(space-between)
+  padding:
+    top: 3.125rem
+    right: 2.25rem    
+    bottom: 3.125rem
+    left: 2.25rem
   background-color: $color-dark
+
+  @media (min-width: 64rem)
+    padding:
+      right: 4.25rem    
+      left: 4.25rem
+
+  @media (min-width: 80rem)
+    padding:
+      right: 6.25rem    
+      left: 6.25rem
+
+  @media (min-width: 120rem)
+    padding:
+      right: auto
+      left: auto
+
 
 .footer-copy
   width: 6.25rem
   
 .footer-logo
   display: block
-  
+
   > svg
     width: 6.25rem
     fill: $color-light

@@ -4,9 +4,13 @@
   box-sizing: border-box
 
 html
+  height: 100%
   -webkit-font-smoothing: subpixel-antialiased
 
 body
+  @extend %flexbox
+  +flex-direction(column)
+  height: 100vh
   font:
     family: $font-family
     size: $font-size
