@@ -1,16 +1,16 @@
 # Site
 title: "Devnspiration"
-description: "Devnspiration is a place for daily inspiration to developers."
+description: "Devnspiration é o lugar para inspiração diária de developers."
 baseurl: ""
 url: "https://devnspiration.com"
 username: "devnspiration"
 
 menu:
-  - title: "Articles"
+  - title: "Artigos"
     slug: "blog"
-  - title: "About"
+  - title: "Sobre"
     slug: "about"
-  - title: "Contact"
+  - title: "Contato"
     slug: "contact"
 
 # Build

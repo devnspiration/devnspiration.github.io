@@ -9,13 +9,31 @@ title: "Blog"
   <div class="feed-list">
     {% for post in site.posts %}
       <a href="{{ post.url }}" class="feed-item">
-        <img src="{{ post.thumb }}" alt="Cover of {{ post.title }}" class="feed-item_image">
+        <img src="{{ post.thumb }}" alt="Capa do {{ post.title }}" class="feed-item_image">
         <div class="feed-author">
           <img src="https://www.gravatar.com/avatar/{{ post.author.email | remove: ' ' | strip_newlines | downcase | md5 }}?s=50&d=blank" alt="{{ post.author.name }} avatar" class="feed-author_image">
-          <span class="feed-author_name">by {{ post.author.name }}</span>
+          <span class="feed-author_name">por {{ post.author.name }}</span>
         </div>
         <h3 class="feed-item_title">{{ post.title }}</h3>
-        <time class="feed-item_date" pubdate datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+        <time class="post-date" pubdate datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+          {{ post.date | date: "%d" }}
+          {% assign m = post.date | date: "%-m" %}
+          {% case m %}
+            {% when '1' %}jan
+            {% when '2' %}fev
+            {% when '3' %}mar
+            {% when '4' %}abr
+            {% when '5' %}mai
+            {% when '6' %}jun
+            {% when '7' %}jul
+            {% when '8' %}ago
+            {% when '9' %}set
+            {% when '10' %}out
+            {% when '11' %}nov
+            {% when '12' %}dez
+          {% endcase %}
+          {{ post.date | date: "%Y" }}
+        </time>
       </a>
     {% endfor %}
     </div>
