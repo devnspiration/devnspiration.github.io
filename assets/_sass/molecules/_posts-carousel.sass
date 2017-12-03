@@ -15,16 +15,17 @@
   @extend %flexbox
   +align-items(center)
   overflow: hidden
-  max-width: 28.125rem
+  width: 28.125rem
   margin-right: 1.5625rem
   border-radius: .3125rem
-  box-shadow: 0 .1875rem .3125rem rgba(0,0,0,.1)
+  box-shadow: 0 .1875rem .3125rem rgba(0,0,0,0.05)
 
 .posts-carousel_image
+  @include card-cover
   width: 10.9375rem
-  margin: 0
 
 .posts-carousel_title
+  +flex(1)
   margin: 0 1.5625rem
   font:
     size: 1.3125rem

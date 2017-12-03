@@ -18,9 +18,7 @@ author:
   <div class="posts-carousel">
     {% for post in site.posts %}
     <a href="{{ post.url }}" class="posts-carousel_item">
-        <figure class="posts-carousel_image">
-          <img src="{{ post.thumb }}" alt="{{ post.title }}">
-        </figure>
+        <img src="{{ post.thumb }}" class="posts-carousel_image" alt="{{ post.title }}">
         <h4 class="posts-carousel_title">{{ post.title }}</h4>
       </a>
     {% endfor %}
