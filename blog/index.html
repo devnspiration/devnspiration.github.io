@@ -10,7 +10,7 @@ title: "Blog"
     {% for post in site.posts %}
       <a href="{{ post.url }}" class="feed-item">
         <figure class="feed-item_image">
-          <img src="{{ post.thumb }}" alt="Capa do {{ post.title }}">
+          <img src="{{ post.image.thumb }}" alt="Capa do {{ post.title }}">
         </figure>
         <div class="feed-author">
           <img src="https://www.gravatar.com/avatar/{{ post.author.email | remove: ' ' | strip_newlines | downcase | md5 }}?s=50&d=blank" alt="{{ post.author.name }} avatar" class="feed-author_image">
