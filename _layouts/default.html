@@ -14,7 +14,7 @@ layout: compress
   <meta itemprop="{% if page.slug == 'home' %}creator{% else %}author{% endif %}" content="{{ page.author.name }}">
   <meta itemprop="name" content="{% if page.slug == 'home' %}{{ site.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}">
   <meta itemprop="description" content="{{ page.description }}">
-  <meta itemprop="image" content="{{ page.image.cover }}">
+  <meta itemprop="image" content="{{ page.image }}">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -24,7 +24,7 @@ layout: compress
   <meta property="og:type" content="blog">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:image" content="{{ page.image.cover }}">
+  <meta property="og:image" content="{{ page.image }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:locale" content="pt-br">
@@ -38,7 +38,7 @@ layout: compress
   <meta name="twitter:url" content="{{ page.url | absolute_url }}">
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{{ page.description }}">
-  <meta name="twitter:image" content="{{ page.image.cover }}">
+  <meta name="twitter:image" content="{{ page.image }}">
   
   <link rel="stylesheet" href="/assets/css/vendor.css">
   <link rel="stylesheet" href="/assets/css/main.css">
