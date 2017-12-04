@@ -19,8 +19,6 @@ menu:
 markdown: kramdown
 plugins:
   - jekyll-feed
-gems:
-  - liquid-md5
 sass:
   sass_dir: assets/_sass
   style: compressed

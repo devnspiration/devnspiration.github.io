@@ -58,7 +58,7 @@ layout: compress
           <img src="{{ page.image.cover }}" alt="Capa do {{ page.title }}">
         </figure>
         <div class="post-author">
-          <img src="https://www.gravatar.com/avatar/{{ page.author.email | remove: ' ' | strip_newlines | downcase | md5 }}?s=75&d=blank" alt="{{ page.author.name }} avatar" class="post-author_image">
+          <img src="{{ page.author.avatar }}?s=75&d=blank" alt="{{ page.author.name }} avatar" class="post-author_image">
           <p class="post-author_name">por {{ page.author.name }}</p>
         </div>
         <h3 class="post-title">{{ page.title }}</h3>
@@ -85,7 +85,7 @@ layout: compress
       <div class="post-content" itemprop="articleBody">
         {{ content }}
       </div>
-      
+
       {% if page.comments %}
       <div class="post-comments">
         <div id="disqus_thread"></div>
