@@ -12,6 +12,7 @@ author:
   name: "Kevin Oliveira"
   email: "me@kevinoliveira.com.br"
   twitter: "kvnol"
+  facebook: "kvnol"
 ---
 
 A tecnicalidade e a criatividade, no desenvolvimento web, se cruzam quando vemos artes sendo recriadas apenas com CSS. E neste caso, do post de hoje, podemos ver **10 logotipos que utilizam o máximo que o CSS pode fornecer** a um desenvolvedor metido a designer recriar logotipos apenas com códigos.
