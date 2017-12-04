@@ -54,7 +54,9 @@ layout: compress
     {% include breadcrumb.html %}
     <article class="post-item">
       <header class="post-header">
-        <img src="{{ page.image.cover }}" alt="Capa do {{ page.title }}" class="post-cover">
+        <figure class="post-cover">
+          <img src="{{ page.image.cover }}" alt="Capa do {{ page.title }}">
+        </figure>
         <div class="post-author">
           <img src="https://www.gravatar.com/avatar/{{ page.author.email | remove: ' ' | strip_newlines | downcase | md5 }}?s=75&d=blank" alt="{{ page.author.name }} avatar" class="post-author_image">
           <p class="post-author_name">por {{ page.author.name }}</p>

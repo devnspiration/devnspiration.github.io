@@ -1,4 +1,11 @@
 @mixin card-cover
-  display: block
+  @extend %flexbox
+  +align-items(center)
+  +justify-content(center)
+  overflow: hidden
+  margin: 0
   height: 10.9375rem
   background-color: $color-theme
+  
+  img
+    width: 100%
