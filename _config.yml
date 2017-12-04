@@ -5,6 +5,8 @@ baseurl: ""
 url: "https://devnspiration.com"
 username: "devnspiration"
 
+permalink: /blog/:title
+
 menu:
   - title: "Artigos"
     slug: "blog"
