@@ -78,3 +78,5 @@ Todo developer conhece a MDN, Mozilla Developer Network, mas se conhece há pouc
 
 <p data-height="600" data-theme-id="light" data-slug-hash="FBKCJ" data-default-tab="result" data-user="jotavejv" data-embed-version="2" data-pen-title="Logo MDN CSS" class="codepen">See the Pen <a href="https://codepen.io/jotavejv/pen/FBKCJ/">Logo MDN CSS</a> by João Victor (<a href="https://codepen.io/jotavejv">@jotavejv</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+Espero, realmente, que todos estes exemplos inspirem vocês que desenham ou têm vontade de desenhar com CSS. E se você tem bons desenhos de logotipos com CSS, deixe aqui nos comentários.
