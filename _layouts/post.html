@@ -21,7 +21,11 @@ layout: compress
   <link rel="icon" type="image/png" href="/favicon.png">
 
   <!-- Facebook OG -->
-  <meta property="og:type" content="blog">
+  <meta property="og:type" content="article">
+  <meta property="article:author" content="{{ page.author.name }}">
+  <meta property="article:section" content="{{ page.category }}">
+  <meta property="article:tag" content="{{ page.tags }}">
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:image" content="{{ page.image.cover }}">
