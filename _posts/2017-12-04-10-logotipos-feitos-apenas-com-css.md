@@ -7,7 +7,7 @@ category: "css"
 tags:
   - css
   - logos
-cover: "https://user-images.githubusercontent.com/3299130/33535982-50836f12-d898-11e7-8f13-14963a1d01d5.png"
+image: "https://user-images.githubusercontent.com/3299130/33535982-50836f12-d898-11e7-8f13-14963a1d01d5.png"
 thumb: "https://user-images.githubusercontent.com/3299130/33536697-ce06655c-d89d-11e7-9c71-c4b6df3440d3.png"
 author:
   name: "Kevin Oliveira"

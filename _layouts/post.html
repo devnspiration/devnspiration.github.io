@@ -14,7 +14,7 @@ layout: compress
   <meta itemprop="{% if page.slug == 'home' %}creator{% else %}author{% endif %}" content="{{ page.author.name }}">
   <meta itemprop="name" content="{{ page.title }}">
   <meta itemprop="description" content="{{ page.description }}">
-  <meta itemprop="image" content="{{ page.cover }}">
+  <meta itemprop="image" content="{{ page.image }}">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -29,7 +29,7 @@ layout: compress
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:image" content="{{ page.cover }}">
+  <meta property="og:image" content="{{ page.image }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:locale" content="pt-br">
@@ -43,7 +43,7 @@ layout: compress
   <meta name="twitter:url" content="{{ page.url | absolute_url }}">
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{{ page.description }}">
-  <meta name="twitter:image" content="{{ page.cover }}">
+  <meta name="twitter:image" content="{{ page.image }}">
 
   <!-- Feed Meta -->
   {% feed_meta %}
@@ -59,7 +59,7 @@ layout: compress
     <article class="post-item">
       <header class="post-header">
         <figure class="post-cover">
-          <img src="{{ page.cover }}" alt="Capa do {{ page.title }}">
+          <img src="{{ page.image }}" alt="Capa do {{ page.title }}">
         </figure>
         <div class="post-author">
           <img src="{{ page.author.avatar }}?s=75&d=blank" alt="{{ page.author.name }} avatar" class="post-author_image">
