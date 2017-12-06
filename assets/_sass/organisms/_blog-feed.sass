@@ -14,11 +14,13 @@
 .feed-author
   @include author
 
-.feed-author_image
-  @include author-img
+  &_image
+    @include author-img
+    width: 3.125rem
+    height: 3.125rem
 
-.feed-author_name
-  @include author-name
+  &_name
+    @include author-name
 
 .feed-item_title
   @include card-title
