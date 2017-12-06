@@ -1,4 +1,4 @@
-<nav class="breadcrumb">
+<nav aria-label="Breadcrumb" class="breadcrumb">
   <h6 class="breadcrumb-title">Você está em:</h6>
   <ol class="breadcrumb-list" itemscope itemtype="http://schema.org/BreadcrumbList">
     <li class="breadcrumb-item" itemprop="itemListElement" itemscope
@@ -16,13 +16,13 @@
     </li>
     <li class="breadcrumb-item" itemprop="itemListElement" itemscope
     itemtype="http://schema.org/ListItem">
-      <a href="{{ page.url | remove: '.html' }}" class="breadcrumb-link" itemprop="item"><span itemprop="name">{{ page.title }}</span></a>
+      <a href="{{ page.url | remove: '.html' }}" class="breadcrumb-link" itemprop="item" aria-current="page"><span itemprop="name">{{ page.title }}</span></a>
       <meta itemprop="position" content="3">
     </li>
     {% else %}
     <li class="breadcrumb-item" itemprop="itemListElement" itemscope
     itemtype="http://schema.org/ListItem">
-      <a href="{{ page.url | remove: '.html' }}" class="breadcrumb-link" itemprop="item"><span itemprop="name">{{ page.title }}</span></a>
+      <a href="{{ page.url | remove: '.html' }}" class="breadcrumb-link" itemprop="item" aria-current="page"><span itemprop="name">{{ page.title }}</span></a>
       <meta itemprop="position" content="2">
     </li>
     {% endif %}
