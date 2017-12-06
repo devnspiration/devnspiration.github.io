@@ -44,7 +44,11 @@ layout: compress
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{{ page.description }}">
   <meta name="twitter:image" content="{{ page.cover }}">
-  
+
+  <!-- Feed Meta -->
+  {% feed_meta %}
+
+  <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/vendor.css">
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
