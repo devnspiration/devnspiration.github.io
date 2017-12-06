@@ -5,7 +5,7 @@
     <a href="{{ site.url }}" title="Devnspiration" class="footer-logo">{% include logo.svg %}</a>
     <p>{{ site.title }} &copy; 2017</p>
   </div>
-  <nav class="footer-menu">
+  <nav class="footer-menu" role="menubar">
     {% for item in site.menu %}
       <a href="/{{ item.slug }}" class="footer-menu_item" role="menuitem" tabindex="{{ forloop.index0 }}" aria-haspopup="false">{{ item.title }}</a>
     {% endfor %}
