@@ -11,7 +11,7 @@ image: "https://user-images.githubusercontent.com/3299130/33535982-50836f12-d898
 thumb: "https://user-images.githubusercontent.com/3299130/33536697-ce06655c-d89d-11e7-9c71-c4b6df3440d3.png"
 author:
   name: "Kevin Oliveira"
-  avatar: "https://www.gravatar.com/avatar/31da7f8f654a24f7ae783fd6d6b2fdd5"
+  picture: "https://www.gravatar.com/avatar/31da7f8f654a24f7ae783fd6d6b2fdd5"
   email: "me@kevinoliveira.com.br"
   twitter: "kvnol"
   facebook: "kvnol"
