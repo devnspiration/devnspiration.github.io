@@ -8,7 +8,7 @@ description: "O Devnspiration traz, através do blog, artigos de inspiração, t
 <section class="content">
   {% include breadcrumb.html %}
   <div class="feed-list">
-    {% for post in site.posts %}
+    {% for post in site.posts limit:4 %}
       <a href="{{ post.url }}" class="feed-item">
         <figure class="feed-item_image">
           <img src="{{ post.thumb }}" alt="Capa do {{ post.title }}">
@@ -18,25 +18,7 @@ description: "O Devnspiration traz, através do blog, artigos de inspiração, t
           <span class="feed-author_name">por {{ post.author.name }}</span>
         </div>
         <h3 class="feed-item_title">{{ post.title }}</h3>
-        <time class="post-date" pubdate datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
-          {{ post.date | date: "%d" }}
-          {% assign m = post.date | date: "%-m" %}
-          {% case m %}
-            {% when '1' %}jan
-            {% when '2' %}fev
-            {% when '3' %}mar
-            {% when '4' %}abr
-            {% when '5' %}mai
-            {% when '6' %}jun
-            {% when '7' %}jul
-            {% when '8' %}ago
-            {% when '9' %}set
-            {% when '10' %}out
-            {% when '11' %}nov
-            {% when '12' %}dez
-          {% endcase %}
-          {{ post.date | date: "%Y" }}
-        </time>
+        <time class="post-date" pubdate datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%d/%m/%Y" }}</time>
       </a>
     {% endfor %}
     </div>
