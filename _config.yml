@@ -8,12 +8,8 @@ username: "devnspiration"
 permalink: /blog/:title
 
 menu:
-  - title: "Artigos"
+  - title: "Blog"
     slug: "blog"
-  - title: "Sobre"
-    slug: "about"
-  - title: "Contato"
-    slug: "contact"
 
 # Build
 markdown: kramdown
