@@ -3,7 +3,7 @@ layout: post
 title: "10 logotipos feitos apenas com CSS"
 comments: true
 description: "A tecnicalidade e a criatividade, no desenvolvimento web, se cruzam quando vemos artes sendo recriadas apenas com CSS. Neste caso, logotipos."
-categories: "css"
+category: "css"
 tags:
   - css
   - logos
