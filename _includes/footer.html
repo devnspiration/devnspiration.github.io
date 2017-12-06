@@ -7,7 +7,7 @@
   </div>
   <nav class="footer-menu">
     {% for item in site.menu %}
-      <a href="/{{ item.slug }}" class="footer-menu_item">{{ item.title }}</a>
+      <a href="/{{ item.slug }}" class="footer-menu_item" role="menuitem" tabindex="{{ forloop.index0 }}" aria-haspopup="false">{{ item.title }}</a>
     {% endfor %}
   </nav>
 </footer>
