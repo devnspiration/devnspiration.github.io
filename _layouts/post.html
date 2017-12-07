@@ -14,7 +14,7 @@ layout: compress
   <meta itemprop="{% if page.slug == 'home' %}creator{% else %}author{% endif %}" content="{{ page.author.name }}">
   <meta itemprop="name" content="{{ page.title }}">
   <meta itemprop="description" content="{{ page.description }}">
-  <meta itemprop="image" content="{{ page.cover }}">
+  <meta itemprop="image" content="{{ page.image }}">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -24,12 +24,12 @@ layout: compress
   <meta property="fb:app_id" content="1492886327677649">
   <meta property="og:type" content="article">
   <meta property="article:author" content="https://facebook.com/{{ page.author.facebook }}">
-  <meta property="article:section" content="{{ page.categories }}">
+  <meta property="article:section" content="{{ page.category }}">
   <meta property="article:tag" content="{% for tag in page.tags %}{% if forloop.last == true %}{{ tag }}{% else %}{{ tag | append: ', ' }}{% endif %}{% endfor %}">
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:image" content="{{ page.cover }}">
+  <meta property="og:image" content="{{ page.image }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:locale" content="pt-br">
@@ -43,8 +43,12 @@ layout: compress
   <meta name="twitter:url" content="{{ page.url | absolute_url }}">
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{{ page.description }}">
-  <meta name="twitter:image" content="{{ page.cover }}">
-  
+  <meta name="twitter:image" content="{{ page.image }}">
+
+  <!-- Feed Meta -->
+  {% feed_meta %}
+
+  <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/vendor.css">
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
@@ -55,10 +59,10 @@ layout: compress
     <article class="post-item">
       <header class="post-header">
         <figure class="post-cover">
-          <img src="{{ page.cover }}" alt="Capa do {{ page.title }}">
+          <img src="{{ page.image }}" alt="Capa do {{ page.title }}">
         </figure>
         <div class="post-author">
-          <img src="{{ page.author.avatar }}?s=75&d=blank" alt="{{ page.author.name }} avatar" class="post-author_image">
+          <img src="{{ page.author.picture }}?s=75&d=blank" alt="{{ page.author.name }} avatar" class="post-author_image">
           <p class="post-author_name">por {{ page.author.name }}</p>
         </div>
         <h1 class="post-title">{{ page.title }}</h1>
@@ -72,15 +76,6 @@ layout: compress
       <div class="post-comments">
         <div id="disqus_thread"></div>
         <script>
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-        /*
-        var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        */
         (function() {
         var d = document, s = d.createElement('script');
         s.src = 'https://devnspiration.disqus.com/embed.js';

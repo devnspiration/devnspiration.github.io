@@ -3,15 +3,15 @@ layout: post
 title: "10 logotipos feitos apenas com CSS"
 comments: true
 description: "A tecnicalidade e a criatividade, no desenvolvimento web, se cruzam quando vemos artes sendo recriadas apenas com CSS. Neste caso, logotipos."
-categories: "css"
+category: "css"
 tags:
   - css
   - logos
-cover: "https://user-images.githubusercontent.com/3299130/33535982-50836f12-d898-11e7-8f13-14963a1d01d5.png"
+image: "https://user-images.githubusercontent.com/3299130/33535982-50836f12-d898-11e7-8f13-14963a1d01d5.png"
 thumb: "https://user-images.githubusercontent.com/3299130/33536697-ce06655c-d89d-11e7-9c71-c4b6df3440d3.png"
 author:
   name: "Kevin Oliveira"
-  avatar: "https://www.gravatar.com/avatar/31da7f8f654a24f7ae783fd6d6b2fdd5"
+  picture: "https://www.gravatar.com/avatar/31da7f8f654a24f7ae783fd6d6b2fdd5"
   email: "me@kevinoliveira.com.br"
   twitter: "kvnol"
   facebook: "kvnol"
