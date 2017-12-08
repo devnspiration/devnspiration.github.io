@@ -16,7 +16,8 @@
   padding-bottom: .9375rem
 
   &:hover > .post-social
-    opacity: 1
+    @media (min-width: 26.25rem)
+      opacity: 1
 
 .post-header
   margin-bottom: 1.875rem
@@ -58,11 +59,19 @@
 
   p
     margin:
-      right: 3.125rem
-      left: 3.125rem
+        top: 1rem
+        right: 1rem
+        left: 1rem
+
     font-size: 1.125rem
     color: lighten($color-dark, 44%)
     line-height: 1.4375rem
+    
+    @media (min-width: 64rem)
+      margin:
+        top: 3.125rem
+        right: 3.125rem
+        left: 3.125rem
 
   strong
     font-weight: 600
@@ -76,13 +85,25 @@
 
   h2
     margin:
-      top: 3.125rem
-      right: 3.125rem
-      left: 3.125rem
+        top: 1rem
+        right: 1rem
+        left: 1rem
+
+    @media (min-width: 64rem)
+      margin:
+        top: 3.125rem
+        right: 3.125rem
+        left: 3.125rem
     font-weight: 600
 
 .post-comments
   margin:
-    top: 3.125rem
-    right: 3.125rem
-    left: 3.125rem
+      top: 1rem
+      right: 1rem
+      left: 1rem
+
+  @media (min-width: 64rem)
+    margin:
+      top: 3.125rem
+      right: 3.125rem
+      left: 3.125rem
