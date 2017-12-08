@@ -12,7 +12,11 @@
 
 .post-item
   @include card-post
+  position: relative
   padding-bottom: .9375rem
+
+  &:hover > .post-social
+    opacity: 1
 
 .post-header
   margin-bottom: 1.875rem

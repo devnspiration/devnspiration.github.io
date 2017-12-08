@@ -1,0 +1,27 @@
+.post-social
+  position: absolute
+  opacity: 0
+  top: 10.95rem
+  right: 0
+  transition: .2s all linear
+
+.social-share
+  position: fixed
+  @extend %flexbox
+  +align-items(center)
+  +flex-direction(column)
+  padding: .625rem .625rem 0
+
+.social-share_title
+  margin: 0
+  font-weight: 300
+  color: lighten($color-dark, 67%)
+
+.social-share_item
+  display: block
+  width: 3.125rem
+  opacity: .3
+  transition: .2s all linear
+
+  &:hover
+    opacity: .6
