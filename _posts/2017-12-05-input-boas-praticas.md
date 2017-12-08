@@ -3,11 +3,11 @@ layout: post
 title: "Boas práticas para inputs de texto"
 comments: true
 description: "Inputs de texto são componentes fundamentais na interação do usuário com a interface, por isso é importante construírmos da melhor forma."
-category: "UI"
+category: "User Interface"
 tags:
-  - html
-  - css
-  - ui design
+  - HTML
+  - CSS
+  - UI
 image: "https://user-images.githubusercontent.com/3299130/33642346-bcad7190-da20-11e7-96fa-aa09db0bec1d.png"
 thumb: "https://user-images.githubusercontent.com/3299130/33642332-b1c4465a-da20-11e7-8a5f-4d650ae8d387.png"
 author:
