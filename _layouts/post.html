@@ -63,13 +63,7 @@ layout: compress
       <div class="post-content" itemprop="articleBody">
         {{ content }}
       </div>
-      <aside class="post-social">
-        <div class="social-share">
-          {% assign variable = value %}
-          <h5 class="social-share_title">Compartilhe</h5>
-          <a href="javascript:window.open('https://twitter.com/share?url={{ page.url | absolute_url }}&via={{ site.username }}&related=share&hashtags={% for tag in page.tags %}{% if forloop.last == true %}{{ tag }}{% else %}{{ tag | append: ', ' }}{% endif %}{% endfor %}&text={{ page.title }}','Twitter','width=600,height=400')" target="popup" class="social-share_item" title="Compartilhar no Twitter"><img src="/assets/img/icons/twitter.svg" alt="Twitter"></a>
-        </div>
-      </aside>
+      {% include social-share.html %}
     </article>
 
     {% if page.comments %}
